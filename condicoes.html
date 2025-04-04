@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>RA:</label>
+    <input id="ra" type="text">
+    
+    <label>Senha:</label>
+    <input id="senha" type="password">
+
+    <button id="somar" onclick="condicoes()">Entrar</button>
+
+    <script>
+        function condicoes () {
+            let ra = document.querySelector("#ra").value
+            let senha = document.querySelector("#senha").value
+            if (ra =="82414197" && senha == "1664") {
+                alert("Válido")
+            } else {
+                alert("Verifique os dados")
+            }
+        }
+    </script>
+</body>
+</html>

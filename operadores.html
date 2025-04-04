@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Número 1:</label>
+    <input id="n1" type="text">
+    
+    <label>Número 2:</label>
+    <input id="n2" type="text">
+    
+    <button id="somar" onclick="operacoes()">Executar operações</button>
+
+    <script>
+        function operacoes() {
+            let n1 = document.getElementById("n1").value
+            let n2 = document.getElementById("n2").value
+
+            n1 = eval(n1)
+            n2 = eval(n2)
+            let soma = (n1 + n2)
+            let subtracao = (n1 - n2)
+            let multiplicacao = (n1 * n2)
+            let divisao = (n1 / n2)
+
+
+
+            alert(
+                `   
+                    Soma: ${soma}
+                    Subtração: ${subtracao}
+                    Multiplicação: ${multiplicacao}
+                    Divisão: ${divisao}
+                `
+            )
+        }
+    </script>
+</body>
+</html>
